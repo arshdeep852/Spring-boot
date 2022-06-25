@@ -23,6 +23,7 @@ public class TestController {
     private Model model;
 
 
+
     @PostMapping("/test")
     public List<Severity> createSeverity(@RequestBody Model model){
         List<Severity> severity = testServices.addSeverity(model);
